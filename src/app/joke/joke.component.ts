@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-joke',
@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JokeComponent implements OnInit {
 
-  joke: string;
+  joke: object;
 
   constructor() {
-    this.joke = 'What did the cheese say when it looked in the mirror?';
+    this.joke = {
+      setup: 'What did the cheese say when it looked in the mirror?',
+      punchline: 'Halloumi'
+    };
   }
 
   ngOnInit() {
